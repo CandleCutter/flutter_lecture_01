@@ -1,5 +1,4 @@
 class Method {
-
   Method() {
     /// int age = add();
     /// add() 메소드는 리턴값이 없으니 에러가 남
@@ -17,12 +16,10 @@ class Method {
     print('Method.Method kk: $kk');
 
     optional("송우영");
-    var ooo = optional("송우영",b:"안써도 되는 것");
+    var ooo = optional("송우영", b: "안써도 되는 것");
     var ooo1 = optional("송우영");
     print('Method.Method ooo: $ooo');
     print('Method.Method ooo: $ooo1');
-
-
   }
 
   /// void = 리턴 타입이 없다
@@ -44,18 +41,11 @@ class Method {
   }
 
   /// String type 함수 만들어 쓰기
-  String introduce({
-    required String name,
-    required String name2,
-
-  }) {
+  String introduce({required String name, required String name2}) {
     return "안녕하세요. $name입니다.";
-
-    /// String type 함수 만들어 쓰기
-
   }
-  String optional(String a, {String b="빈 값"}){
-    return"$a, $b, 잘부탁드립니다";
+
+  String optional(String a, {String b = "빈 값"}) {
+    return "$a, $b, 잘부탁드립니다";
   }
 }
-

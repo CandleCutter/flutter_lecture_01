@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'ch3/container_screen.dart';
+import 'ch3/01.container_screen.dart';
+import 'ch3/02.column_screen.dart';
 
 /// main 함수
 /// 어플리케이션이 시작하는 위치
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home : ContainerScreen()
+      home : ColumnScreen()
     );
 
 

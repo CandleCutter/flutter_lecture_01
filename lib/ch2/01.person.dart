@@ -7,12 +7,15 @@
 
 class Person {
 
-  ///생성자
-  Person() {
+  ///생성자1
+  // Person() {
+  //
+  //   print("person 생성");
+  //
+  // }
 
-    print("person 생성");
-
-  }
+  /// 생성자2
+  Person(this.name, this.age, this.weight);
 
   String name = "송우영";
   int age = 34;
@@ -20,5 +23,11 @@ class Person {
 
   void talk() {
     print("$name 님이 대화를 신청했습니다.");
+  }
+
+  void walk(){
+
+    print("$name 님이 걸어갑니다");
+
   }
 }

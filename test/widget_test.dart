@@ -25,11 +25,9 @@ void main() {
   //사용자가 타입을 만들수 있음
 
   /// 클래스를 생성할 때는 ()를 써줘야 함.
-  Person person = Person();
+  Person person = Person("김진환",34,78.0);
   person.talk();
-
-
-
+  person.walk();
 
 
 }

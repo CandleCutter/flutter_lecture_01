@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_lecture_01/ch3/03.row_screen.dart';
 import 'ch3/01.container_screen.dart';
 import 'ch3/02.column_screen.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home : ColumnScreen()
+      home : RowScreen()
     );
 
 

@@ -32,3 +32,5 @@
 ///
 /// android studio github 연동
 /// 세팅 버전컨트롤 깃
+///
+/// https://jinhan38.com/

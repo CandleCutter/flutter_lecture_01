@@ -17,17 +17,12 @@ class Person {
   /// 생성자2
   Person(this.name, this.age, this.weight);
 
-  String name = "송우영";
-  int age = 34;
-  double weight = 78.5;
+  String name;
+  int age;
+  double weight;
 
   void talk() {
     print("$name 님이 대화를 신청했습니다.");
   }
 
-  void walk(){
-
-    print("$name 님이 걸어갑니다");
-
-  }
 }

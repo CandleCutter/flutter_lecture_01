@@ -27,7 +27,15 @@ void main() {
   /// 클래스를 생성할 때는 ()를 써줘야 함.
   Person person = Person("김진환",34,78.0);
   person.talk();
-  person.walk();
+
+  Person person1 = Person("김진환1",341,178.0);
+  person1.talk();
+
+  Person person2 = Person("김진환2",3411,1178.0);
+  person2.talk();
+
+
+
 
 
 }

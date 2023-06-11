@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 ///stl 누르고 자동완성
@@ -13,17 +15,56 @@ class ContainerScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          color: Colors.yellow,
-          width: 200,
-          height: 400,
-          child: const Text(
+
+          width: 300,
+          height: 500,
+          alignment: Alignment.bottomCenter,
+          padding: const EdgeInsets.all(10),
+          // margin: EdgeInsets.all(30),
+          decoration: BoxDecoration(
+            color: Colors.purpleAccent,
+            borderRadius: BorderRadius.circular(30),
+            border: Border.all(color: Colors.black,
+            width: 8,
+            ),
+            gradient:
+            const LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              transform: GradientRotation(1),
+              colors: [
+              Colors.red,
+              Colors.orange,
+              Colors.yellow,
+              Colors.green,
+              Colors.blue,
+              Colors.indigo,
+              Colors.purple,
+            ])
+          ),
+          foregroundDecoration: BoxDecoration(
+            color: Colors.grey,
+            shape: BoxShape.circle,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.shade300,
+                blurRadius: 20,
+                spreadRadius: 20,
+                offset: Offset(15,15),
+                blurStyle: BlurStyle.outer
+
+
+              )
+            ]
+
+          ),
+          child:  const Text(
             "컨테이너",
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
             ),
-          ),
-          alignment: Alignment.bottomCenter,
+          ),//decoration을 사용하면 컬러 사용 불가
 
         ),
       ),

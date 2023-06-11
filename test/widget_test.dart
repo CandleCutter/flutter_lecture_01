@@ -7,6 +7,8 @@ import 'package:flutter_lecture_01/ch1/05.collections.dart';
 import 'package:flutter_lecture_01/ch1/06.for_loop.dart';
 import 'package:flutter_lecture_01/ch2/01.person.dart';
 import 'package:flutter_lecture_01/ch2/02.product.dart';
+import 'package:flutter_lecture_01/ch2/coffee/02.americano.dart';
+import 'package:flutter_lecture_01/ch2/coffee/03.latte.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_lecture_01/main.dart';
 
@@ -36,15 +38,21 @@ void main() {
   // person2.talk();
 
   /// 더조은 회사의 선풍기를 몇대 팔았는지 확인
-  Product a = Product("선풍기", "더조은");
-  a.sale();
-  a.sale();
-  a.sale();
-  a.sum();
+  // Product a = Product("선풍기", "더조은");
+  // a.sale();
+  // a.sale();
+  // a.sale();
+  // a.sum();
+  //
+
+  Americano americano = Americano("프리미엄아메리카노", 8000, false, false);
+  americano.sale();
+  americano.service();
 
 
-
-
+  Latte latte = Latte("저렴한 라떼", 1500, true, true);
+  latte.service();
+  latte.refund();
 
 
 

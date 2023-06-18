@@ -2,12 +2,8 @@
 /// 함수는 play, jump
 /// dog class에 implement
 
-
-abstract class DogInterface{
-
+abstract class DogInterface {
   void play();
 
   void jump();
-
-
 }

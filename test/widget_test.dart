@@ -14,7 +14,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_lecture_01/main.dart';
 
 void main() {
-
   // Variable();
   // print("----------------");
   // Operator();
@@ -65,12 +64,4 @@ void main() {
   dog1.run();
   dog1.sleep();
   dog1.eat();
-
-
-
-
-
-
 }
-
-

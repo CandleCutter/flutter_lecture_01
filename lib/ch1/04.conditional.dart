@@ -12,7 +12,7 @@ class Conditional {
     String result = testGrade(85);
     print('등급 : $result');
 
-    String switchResult = testSwitch(80);
+    String switchResult = testSwitch(50);
     print('SwitchResult : $switchResult');
 
 
@@ -77,9 +77,9 @@ class Conditional {
         break;
 
       default:
+        grade = "No data";
         // 어떤 경우에도 해당되지 않는 경우
         break;
-
 
     }
     return grade;

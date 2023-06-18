@@ -3,6 +3,8 @@ import 'package:flutter_lecture_01/ch3/01.container_screen.dart';
 import 'package:flutter_lecture_01/ch3/02.column_screen.dart';
 import 'package:flutter_lecture_01/ch3/03.row_screen.dart';
 import 'package:flutter_lecture_01/ch3/04.scaffold_screen.dart';
+import 'package:flutter_lecture_01/ch3/05.text_screen.dart';
+import 'package:flutter_lecture_01/ch3/06.image_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -22,10 +24,12 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          button(page: ContainerScreen(), name: "container"),
-          button(page: ColumnScreen(), name: "column"),
-          button(page: RowScreen(), name: "row"),
-          button(page: ScaffoldScreen(), name: "scaffold"),
+          button(page: ContainerScreen(), name: "Container"),
+          button(page: ColumnScreen(), name: "Column"),
+          button(page: RowScreen(), name: "Row"),
+          button(page: ScaffoldScreen(), name: "Scaffold"),
+          button(page: TextScreen(), name: "Text"),
+          button(page: ImageScreen(), name: "Image"),
 
         ],
       ),

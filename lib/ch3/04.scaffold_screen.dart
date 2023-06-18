@@ -12,7 +12,12 @@ class ScaffoldScreen extends StatelessWidget {
     ///
     return Scaffold(
       appBar: appBarWidget(),
-
+      backgroundColor: Colors.orangeAccent,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print("액션버튼 클릭");
+        },
+      ),
     );
   }
 

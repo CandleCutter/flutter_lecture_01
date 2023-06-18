@@ -17,7 +17,7 @@ class ImageScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Image.asset("assets/summer.png"),
+          // Image.asset("assets/summer.png"),
           SizedBox(width:300,
               height:300,
               child: Image.network(imageUrl,

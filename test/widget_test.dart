@@ -6,9 +6,10 @@ import 'package:flutter_lecture_01/ch1/04.conditional.dart';
 import 'package:flutter_lecture_01/ch1/05.collections.dart';
 import 'package:flutter_lecture_01/ch1/06.for_loop.dart';
 import 'package:flutter_lecture_01/ch2/01.person.dart';
+import 'package:flutter_lecture_01/ch2/01.Coffee/01.coffee.dart';
+import 'package:flutter_lecture_01/ch2/02.Animal/02.bird.dart';
+import 'package:flutter_lecture_01/ch2/02.Animal/03.dog.dart';
 import 'package:flutter_lecture_01/ch2/02.product.dart';
-import 'package:flutter_lecture_01/ch2/coffee/02.americano.dart';
-import 'package:flutter_lecture_01/ch2/coffee/03.latte.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_lecture_01/main.dart';
 
@@ -20,7 +21,7 @@ void main() {
   // print("----------------");
   // Method();
   // print("----------------");
-  Conditional();
+  // Conditional();
   // collections();
   // ForLoop();
 
@@ -53,6 +54,18 @@ void main() {
   // Latte latte = Latte("저렴한 라떼", 1500, true, true);
   // latte.service();
   // latte.refund();
+
+  /// Bird 클래스 생성
+  Bird bird1 = Bird("비둘기", 2);
+
+  /// run 함수 호출
+  bird1.run();
+
+  Dog dog1 = Dog(name: "흰둥이", age: 3);
+  dog1.run();
+  dog1.sleep();
+  dog1.eat();
+
 
 
 

@@ -17,4 +17,13 @@ class Bird extends Animal{
   void sleep() {
   }
 
+  /// 고급
+  /// 부모 클래스에서 구현한 함수를 지식 클래스에서 재구현 하기
+  @override
+  void run() {
+    /// super라는 키워는 부모클래스의 것을 사용할 수 있음
+    /// super.run(); 호출하면 부모 클래스의 run 함수를 호출하는 것
+    // super.run();
+    print('Bird 클래스의 run');
+  }
 }

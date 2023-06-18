@@ -6,7 +6,7 @@
 /// 괄호 안에서 ctrl + p =입력해야 하는 것들이 나옴
 /// 파일에 놓고 shift + f6
 /// alt + p
-///
+/// alt + insert : 클래스에서 생성자 만들기 constructor
 ///
 ///
 ///

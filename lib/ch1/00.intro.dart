@@ -7,6 +7,7 @@
 /// 파일에 놓고 shift + f6
 /// alt + p
 /// alt + insert : 클래스에서 생성자 만들기 constructor
+/// 파일이름 + e
 ///
 ///
 ///

@@ -1,6 +1,7 @@
 import 'package:flutter_lecture_01/ch2/02.Animal/01.animal.dart';
+import 'package:flutter_lecture_01/ch2/02.Animal/05.dog_interface.dart';
 
-class Dog extends Animal{
+class Dog extends Animal implements DogInterface{
 
   /// Bird 클래스와 다른 2개 작업
   /// 1. swim 함수 추가
@@ -23,6 +24,14 @@ class Dog extends Animal{
 
   void swim(){
     print("강아지 $name이가 수영하고 있습니다.");
+  }
+
+  @override
+  void jump() {
+  }
+
+  @override
+  void play() {
   }
 
 

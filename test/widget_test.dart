@@ -10,6 +10,9 @@ import 'package:flutter_lecture_01/ch2/01.Coffee/01.coffee.dart';
 import 'package:flutter_lecture_01/ch2/02.Animal/02.bird.dart';
 import 'package:flutter_lecture_01/ch2/02.Animal/03.dog.dart';
 import 'package:flutter_lecture_01/ch2/02.product.dart';
+import 'package:flutter_lecture_01/ch2/03.homework/02.benz.dart';
+import 'package:flutter_lecture_01/ch2/03.homework/03.genesis.dart';
+import 'package:flutter_lecture_01/ch2/03.homework/04.sonata.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_lecture_01/main.dart';
 
@@ -54,14 +57,41 @@ void main() {
   // latte.service();
   // latte.refund();
 
-  /// Bird 클래스 생성
-  Bird bird1 = Bird("비둘기", 2);
+//   /// Bird 클래스 생성
+//   Bird bird1 = Bird("비둘기", 2);
+//
+//   /// run 함수 호출
+//   bird1.run();
+//
+//   Dog dog1 = Dog(name: "흰둥이", age: 3);
+//   dog1.run();
+//   dog1.sleep();
+//   dog1.eat();
 
-  /// run 함수 호출
-  bird1.run();
+  Benz benz = Benz(18000, "벤츠", "김벤츠");
+  benz.go();
+  benz.stop();
+  benz.benzFunction();
+  benz.sell();
 
-  Dog dog1 = Dog(name: "흰둥이", age: 3);
-  dog1.run();
-  dog1.sleep();
-  dog1.eat();
+  print("-----------------------------");
+
+  Genesis genesis = Genesis(8000, "제네시스", "김제네");
+  genesis.go();
+  genesis.stop();
+  genesis.genesisFunction();
+  genesis.sell();
+
+  print("-----------------------------");
+
+  Sonata sonata = Sonata(5000, "소나타", "김소나");
+  sonata.go();
+  sonata.stop();
+  sonata.sonataFunction();
+  sonata.sell();
+
+
+
+
+
 }

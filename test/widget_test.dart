@@ -20,7 +20,7 @@ void main() {
   // print("----------------");
   // Method();
   // print("----------------");
-  // Conditional();
+  Conditional();
   // collections();
   // ForLoop();
 
@@ -45,14 +45,15 @@ void main() {
   // a.sum();
   //
 
-  Americano americano = Americano("프리미엄아메리카노", 8000, false, false);
-  americano.sale();
-  americano.service();
+  // Americano americano = Americano("프리미엄아메리카노", 8000, false, false);
+  // americano.sale();
+  // americano.service();
+  //
+  //
+  // Latte latte = Latte("저렴한 라떼", 1500, true, true);
+  // latte.service();
+  // latte.refund();
 
-
-  Latte latte = Latte("저렴한 라떼", 1500, true, true);
-  latte.service();
-  latte.refund();
 
 
 

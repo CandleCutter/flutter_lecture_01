@@ -1,3 +1,5 @@
+import 'package:flutter/scheduler.dart';
+
 class Conditional {
   /// if문
   /// switch문
@@ -6,8 +8,12 @@ class Conditional {
   Conditional() {
     int r = conditionalIF(50);
     print('r : $r');
+
     String result = testGrade(85);
     print('등급 : $result');
+
+    String switchResult = testSwitch(80);
+    print('SwitchResult : $switchResult');
 
 
   }
@@ -28,6 +34,10 @@ class Conditional {
     return result;
   }
 
+
+  ///if 믄은 범위 체크 가능
+  ///switch 문은 값으로 진행
+  ///
   String testGrade(int score) {
     String grade = "F";
 
@@ -42,4 +52,38 @@ class Conditional {
     } else {}
     return grade;
   }
+
+  String testSwitch(int score){
+
+    String grade = "F";
+
+    switch(score){
+      case 90:
+      // 어떤 경우에도 해당되지 않는 경우
+
+        grade = "A";
+        break;
+
+      case 80:
+        grade = "B";
+        break;
+
+      case 70:
+        grade = "C";
+        break;
+
+      case 60:
+        grade = "D";
+        break;
+
+      default:
+        // 어떤 경우에도 해당되지 않는 경우
+        break;
+
+
+    }
+    return grade;
+
+  }
+
 }

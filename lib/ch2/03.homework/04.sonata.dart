@@ -7,12 +7,12 @@ class Sonata extends Car implements CarInterface{
 
   void sonataFunction(){
 
-    print("$owner 가 $carName에 주유하고 있습니다.");
+    print("$owner가 $carName에 주유하고 있습니다.");
   }
 
   @override
   void sell() {
-    print("$owner 가 $carName을 $price에 판매했습니다.");
+    print("$owner가 $carName을 $price에 판매했습니다.");
   }
 
 }

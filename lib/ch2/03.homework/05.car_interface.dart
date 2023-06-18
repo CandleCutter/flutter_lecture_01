@@ -1,6 +1,4 @@
 abstract class CarInterface {
 
-  void sell() {
-
-  }
+  void sell();
 }

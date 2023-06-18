@@ -7,12 +7,12 @@ class Genesis extends Car implements CarInterface{
 
   void genesisFunction(){
 
-    print("$owner 가 $carName를 세차하고 있습니다.");
+    print("$owner가 $carName를 세차하고 있습니다.");
   }
 
   @override
   void sell() {
-    print("$owner 가 $carName을 $price에 판매했습니다.");
+    print("$owner가 $carName을 $price에 판매했습니다.");
   }
 
 }

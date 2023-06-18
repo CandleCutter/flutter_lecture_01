@@ -6,12 +6,12 @@ class Benz extends Car implements CarInterface{
 
   void benzFunction(){
 
-    print("$owner 가 $carName를 수리했습니다.");
+    print("$owner가 $carName를 수리했습니다.");
   }
 
   @override
   void sell() {
-    print("$owner 가 $carName을 $price에 판매했습니다.");
+    print("$owner가 $carName을 $price에 판매했습니다.");
   }
 
 }

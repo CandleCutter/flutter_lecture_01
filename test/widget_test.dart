@@ -77,10 +77,10 @@ void main() {
   print("-----------------------------");
 
   Genesis genesis = Genesis(8000, "제네시스", "김제네");
-  genesis.go();
-  genesis.stop();
-  genesis.genesisFunction();
-  genesis.sell();
+  genesis..go()
+  ..stop()
+  ..genesisFunction()
+  ..sell();
 
   print("-----------------------------");
 

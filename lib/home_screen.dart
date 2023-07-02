@@ -5,6 +5,7 @@ import 'package:flutter_lecture_01/ch3/03.row_screen.dart';
 import 'package:flutter_lecture_01/ch3/04.scaffold_screen.dart';
 import 'package:flutter_lecture_01/ch3/05.text_screen.dart';
 import 'package:flutter_lecture_01/ch3/06.image_screen.dart';
+import 'package:flutter_lecture_01/ch4/01.button_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -30,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
           button(page: ScaffoldScreen(), name: "Scaffold"),
           button(page: TextScreen(), name: "Text"),
           button(page: ImageScreen(), name: "Image"),
+          button(page: ButtonScreen(), name: "Button"),
 
         ],
       ),

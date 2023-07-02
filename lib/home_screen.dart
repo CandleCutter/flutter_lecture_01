@@ -8,6 +8,9 @@ import 'package:flutter_lecture_01/ch3/06.image_screen.dart';
 import 'package:flutter_lecture_01/ch4/01.button_screen.dart';
 import 'package:flutter_lecture_01/ch4/02.text_form_field_screen.dart';
 import 'package:flutter_lecture_01/ch4/03.single_scroll_screen.dart';
+import 'package:flutter_lecture_01/ch4/04.listview_scroll.dart';
+import 'package:flutter_lecture_01/ch4/05.gridview_screen.dart';
+import 'package:flutter_lecture_01/ch5/01.pageview_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -37,6 +40,9 @@ class _HomeScreenState extends State<HomeScreen> {
             button(page: ButtonScreen(), name: "Button"),
             button(page: TextFormFieldScreen(), name: "TextFormField"),
             button(page: SingleScrollScreen(), name: "SingleScrollScreen"),
+            button(page: ListViewScroll(), name: "ListViewScroll"),
+            button(page: GridViewScreen(), name: "GridViewScreen"),
+            button(page: PageViewScreen(), name: "PageViewScreen"),
 
 
           ],

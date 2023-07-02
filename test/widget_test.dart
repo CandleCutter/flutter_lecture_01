@@ -5,6 +5,7 @@ import 'package:flutter_lecture_01/ch1/03.method.dart';
 import 'package:flutter_lecture_01/ch1/04.conditional.dart';
 import 'package:flutter_lecture_01/ch1/05.collections.dart';
 import 'package:flutter_lecture_01/ch1/06.for_loop.dart';
+import 'package:flutter_lecture_01/ch1/07.null_safety.dart';
 import 'package:flutter_lecture_01/ch2/01.person.dart';
 import 'package:flutter_lecture_01/ch2/01.Coffee/01.coffee.dart';
 import 'package:flutter_lecture_01/ch2/02.Animal/02.bird.dart';
@@ -67,28 +68,47 @@ void main() {
 //   dog1.run();
 //   dog1.sleep();
 //   dog1.eat();
+//
+//   Benz benz = Benz(18000, "벤츠", "김벤츠");
+//   benz.go();
+//   benz.stop();
+//   benz.benzFunction();
+//   benz.sell();
+//
+//   print("-----------------------------");
+//
+//   Genesis genesis = Genesis(8000, "제네시스", "김제네");
+//   genesis..go()
+//   ..stop()
+//   ..genesisFunction()
+//   ..sell();
+//
+//   print("-----------------------------");
+//
+//   Sonata sonata = Sonata(5000, "소나타", "김소나");
+//   sonata.go();
+//   sonata.stop();
+//   sonata.sonataFunction();
+//   sonata.sell();
+  var nullSafety = NullSafety();
 
-  Benz benz = Benz(18000, "벤츠", "김벤츠");
-  benz.go();
-  benz.stop();
-  benz.benzFunction();
-  benz.sell();
+  nullSafety.age = 40;
+  nullSafety.name= "홍길동";
+  nullSafety.age2= 50;
+  nullSafety.age2= null;
+  nullSafety.name2= "null이였지";
+  nullSafety.name2= null;
 
-  print("-----------------------------");
+  NullSafety? ns2;
 
-  Genesis genesis = Genesis(8000, "제네시스", "김제네");
-  genesis..go()
-  ..stop()
-  ..genesisFunction()
-  ..sell();
+  print("ns2 : $ns2");
 
-  print("-----------------------------");
 
-  Sonata sonata = Sonata(5000, "소나타", "김소나");
-  sonata.go();
-  sonata.stop();
-  sonata.sonataFunction();
-  sonata.sell();
+
+
+
+
+
 
 
 

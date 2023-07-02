@@ -6,6 +6,8 @@ import 'package:flutter_lecture_01/ch3/04.scaffold_screen.dart';
 import 'package:flutter_lecture_01/ch3/05.text_screen.dart';
 import 'package:flutter_lecture_01/ch3/06.image_screen.dart';
 import 'package:flutter_lecture_01/ch4/01.button_screen.dart';
+import 'package:flutter_lecture_01/ch4/02.text_form_field_screen.dart';
+import 'package:flutter_lecture_01/ch4/03.single_scroll_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -23,17 +25,22 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(title: Text("홈"),
       ),
-      body: Column(
-        children: [
-          button(page: ContainerScreen(), name: "Container"),
-          button(page: ColumnScreen(), name: "Column"),
-          button(page: RowScreen(), name: "Row"),
-          button(page: ScaffoldScreen(), name: "Scaffold"),
-          button(page: TextScreen(), name: "Text"),
-          button(page: ImageScreen(), name: "Image"),
-          button(page: ButtonScreen(), name: "Button"),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            button(page: ContainerScreen(), name: "Container"),
+            button(page: ColumnScreen(), name: "Column"),
+            button(page: RowScreen(), name: "Row"),
+            button(page: ScaffoldScreen(), name: "Scaffold"),
+            button(page: TextScreen(), name: "Text"),
+            button(page: ImageScreen(), name: "Image"),
+            button(page: ButtonScreen(), name: "Button"),
+            button(page: TextFormFieldScreen(), name: "TextFormField"),
+            button(page: SingleScrollScreen(), name: "SingleScrollScreen"),
 
-        ],
+
+          ],
+        ),
       ),
     );
 

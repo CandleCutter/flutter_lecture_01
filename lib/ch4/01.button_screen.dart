@@ -22,6 +22,8 @@ class _ButtonScreenState extends State<ButtonScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             _elevatedButton(),
+            _textButton(),
+            _outLinedButton(),
 
           ],
         ),
@@ -41,6 +43,22 @@ class _ButtonScreenState extends State<ButtonScreen> {
       },
       style: buttonStyle(),
       child: Text("ElevatedButton"),
+    );
+  }
+
+  Widget _textButton(){
+    return TextButton(
+      onPressed: (){},
+      child: Text("TextButton"),
+      style: buttonStyle(),
+    );
+  }
+
+  Widget _outLinedButton(){
+    return OutlinedButton(
+      onPressed: (){},
+      child: Text("OutLinedButton"),
+      style: buttonStyle(),
     );
   }
 

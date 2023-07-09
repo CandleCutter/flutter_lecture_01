@@ -39,7 +39,27 @@ class _DefaultTabControllerScreenState extends State<DefaultTabControllerScreen>
             SizedBox(
               height: 300,
               child: _tabBarView(),
-            )
+            ),
+            Row(
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    tabController.index = 0;
+                  },
+                  child: Text("이동"),
+                ),
+              ],
+            ),
+            ElevatedButton(
+              onPressed: () {
+                tabController.animateTo(
+                  2,
+                  duration: Duration(microseconds: 2000),
+                  curve: Curves.elasticInOut,
+                );
+              },
+              child: Text("이동에니메이션"),
+            ),
           ],
         ),
       ),

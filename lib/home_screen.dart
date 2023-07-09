@@ -14,6 +14,7 @@ import 'package:flutter_lecture_01/ch5/01.pageview_screen.dart';
 import 'package:flutter_lecture_01/ch5/02.tabbar_screen.dart';
 
 import 'ch5/03.default_tab_controller_screen.dart';
+import 'ch5/04.ui_exam.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -48,6 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
             button(page: PageViewScreen(), name: "PageViewScreen"),
             button(page: TabBarScreen(), name: "TabBarScreen"),
             button(page: DefaultTabControllerScreen(), name: "DefaultTabControllerScreen"),
+            button(page: UiExamScreen(), name: "UiExamScreen"),
 
 
           ],

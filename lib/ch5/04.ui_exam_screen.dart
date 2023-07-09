@@ -9,6 +9,7 @@ class UiExamScreen extends StatefulWidget {
 
 class _UiExamScreenState extends State<UiExamScreen> {
   final PageController pageController = PageController(viewportFraction: 0.9);
+  int _currentIndex = 0;
 
   @override
   void dispose() {
@@ -22,6 +23,7 @@ class _UiExamScreenState extends State<UiExamScreen> {
       backgroundColor: Colors.white,
       appBar: _appBar(),
       body: _body(),
+      bottomNavigationBar: _bottomNav(),
     );
   }
 
@@ -37,16 +39,22 @@ class _UiExamScreenState extends State<UiExamScreen> {
   }
 
   Widget _body() {
-    return SingleChildScrollView(
-        child: Column(
+    return IndexedStack(
+      index: _currentIndex,
       children: [
-        _top(),
-        const SizedBox(height: 15),
-        _middle(),
-        const SizedBox(height: 15),
-        ..._bottom(), //리턴 타입이 리스트인 것은 앞에 '...' 을 붙여 준다
+        SingleChildScrollView(
+            child: Column(children: [
+          _top(),
+          const SizedBox(height: 15),
+          _middle(),
+          const SizedBox(height: 15),
+          ..._bottom(),
+        ])),
+        Text("2"),
+        Text("3"),
       ],
-    ));
+    );
+
   }
 
   List<String> labels = ["택시", "버스", "바이크", "승용차", "SUV", "자전거"];
@@ -132,5 +140,39 @@ class _UiExamScreenState extends State<UiExamScreen> {
         contentPadding: EdgeInsets.symmetric(horizontal: 12),
       );
     });
+  }
+
+  Widget _bottomNav() {
+    return BottomNavigationBar(
+        currentIndex: _currentIndex,
+        onTap: (value) {
+          setState(() {
+            _currentIndex = value;
+          });
+        },
+        showSelectedLabels: true,
+        showUnselectedLabels: false,
+        backgroundColor: Colors.orange.shade50,
+        iconSize: 30,
+        selectedItemColor: Colors.redAccent,
+        unselectedItemColor: Colors.grey.shade500,
+        type: BottomNavigationBarType.shifting,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            activeIcon: Icon(Icons.home),
+            label: "홈",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.alarm_off),
+            activeIcon: Icon(Icons.access_alarm),
+            label: "알람",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_outlined),
+            activeIcon: Icon(Icons.person),
+            label: "친구",
+          ),
+        ]);
   }
 }

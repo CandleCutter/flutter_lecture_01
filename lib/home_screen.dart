@@ -12,9 +12,10 @@ import 'package:flutter_lecture_01/ch4/04.listview_scroll.dart';
 import 'package:flutter_lecture_01/ch4/05.gridview_screen.dart';
 import 'package:flutter_lecture_01/ch5/01.pageview_screen.dart';
 import 'package:flutter_lecture_01/ch5/02.tabbar_screen.dart';
+import 'package:flutter_lecture_01/ch5/05.bottom_navigation_bar_screen.dart';
 
 import 'ch5/03.default_tab_controller_screen.dart';
-import 'ch5/04.ui_exam.dart';
+import 'ch5/04.ui_exam_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -50,6 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
             button(page: TabBarScreen(), name: "TabBarScreen"),
             button(page: DefaultTabControllerScreen(), name: "DefaultTabControllerScreen"),
             button(page: UiExamScreen(), name: "UiExamScreen"),
+            button(page: BottomNavigationBarScreen(), name: "BottomNavigationBarScreen"),
 
 
           ],

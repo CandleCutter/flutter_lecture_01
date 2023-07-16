@@ -18,6 +18,7 @@ import 'ch5/03.default_tab_controller_screen.dart';
 import 'ch5/04.ui_exam_screen.dart';
 import 'ch6/01.route_screen.dart';
 import 'ch6/07.dialog_screen.dart';
+import 'ch6/todo/08.todo_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -61,6 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 name: "BottomNavigationBarScreen"),
             button(page: RouteScreen(), name: "RouteScreen"),
             button(page: DialogScreen(), name: "DialogScreen"),
+            button(page: TodoScreen(), name: "TodoScreen"),
 
             ElevatedButton(
                 onPressed: () {

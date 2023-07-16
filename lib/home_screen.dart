@@ -16,6 +16,8 @@ import 'package:flutter_lecture_01/ch5/05.bottom_navigation_bar_screen.dart';
 
 import 'ch5/03.default_tab_controller_screen.dart';
 import 'ch5/04.ui_exam_screen.dart';
+import 'ch6/01.route_screen.dart';
+import 'ch6/07.dialog_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -31,7 +33,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("홈"),
+      appBar: AppBar(
+        title: Text("홈"),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -49,16 +52,25 @@ class _HomeScreenState extends State<HomeScreen> {
             button(page: GridViewScreen(), name: "GridViewScreen"),
             button(page: PageViewScreen(), name: "PageViewScreen"),
             button(page: TabBarScreen(), name: "TabBarScreen"),
-            button(page: DefaultTabControllerScreen(), name: "DefaultTabControllerScreen"),
+            button(
+                page: DefaultTabControllerScreen(),
+                name: "DefaultTabControllerScreen"),
             button(page: UiExamScreen(), name: "UiExamScreen"),
-            button(page: BottomNavigationBarScreen(), name: "BottomNavigationBarScreen"),
+            button(
+                page: BottomNavigationBarScreen(),
+                name: "BottomNavigationBarScreen"),
+            button(page: RouteScreen(), name: "RouteScreen"),
+            button(page: DialogScreen(), name: "DialogScreen"),
 
-
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, "/first");
+                },
+                child: Text("RouteNamedScreen"))
           ],
         ),
       ),
     );
-
   }
 
   Widget button({required Widget page, required String name}) {

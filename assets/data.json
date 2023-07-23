@@ -1,0 +1,27 @@
+{
+  "id": "dejavuguy@naverc.com",
+  "number": 1,
+  "info": {
+    "age": 35,
+    "weight": 80,
+    "name": "song",
+    "description": {
+      "career": "developer",
+      "when": "2020-01-01"
+    }
+  },
+  "framework": [
+    {
+      "email": "dejavuguy@naver.com",
+      "platform": "flutter"
+    },
+    {
+      "email": "dejavuguy@naver.com",
+      "platform": "Spring"
+    },
+    {
+      "email": "dejavuguy@naver.com",
+      "platform": "Next.js"
+    }
+  ]
+}

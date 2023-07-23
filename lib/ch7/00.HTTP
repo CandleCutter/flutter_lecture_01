@@ -1,0 +1,28 @@
+Rest API : 데이터 통신하는 아키텍처
+아키텍처 : 설계도
+프로토콜 : 통신 규약, 컴퓨터 또는 전자기기 간의 원활한 통신을 위해 지키기로 약속한 규약
+
+
+Method : GET, POST, PUT, DELETE
+Method 방식 구분
+GET :
+https://newsapi.1org/v2/everything?q=tesla&from=2023-06-23&sortBy=publishedAt&apiKey=d38754e618a44b58be87417caa105cdc
+
+Scheme : [https]
+        :// 앞에 있는 부분
+Host : [newsapi.1org]
+        :// 뒤에 있는 부분
+Path : [v2/everything]
+        host 뒤에 /이하 부분
+Query(쿼리) : [?q=tesla&from=2023-06-23]
+        Path 뒤에 있는 부분
+        쿼리를 사용하기 위해서는 앞에 물음표(?)를 붙여야 함
+        쿼리를 여러개 사용할 때는 ampersand(&)를 붙여야 함
+
+        ex) 쿼리 name에 데이터를 보내주세요.
+        host?name=wooyoung
+
+POST : 데이터들을 보내기 위해 사용 ex)로그인
+GET 방식 + Json
+
+

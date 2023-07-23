@@ -19,6 +19,8 @@ import 'ch5/04.ui_exam_screen.dart';
 import 'ch6/01.route_screen.dart';
 import 'ch6/07.dialog_screen.dart';
 import 'ch6/todo/08.todo_screen.dart';
+import 'ch7/news/01.news_screen.dart';
+import 'ch7/news/02.json_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -53,6 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
             button(page: GridViewScreen(), name: "GridViewScreen"),
             button(page: PageViewScreen(), name: "PageViewScreen"),
             button(page: TabBarScreen(), name: "TabBarScreen"),
+
             button(
                 page: DefaultTabControllerScreen(),
                 name: "DefaultTabControllerScreen"),
@@ -63,7 +66,8 @@ class _HomeScreenState extends State<HomeScreen> {
             button(page: RouteScreen(), name: "RouteScreen"),
             button(page: DialogScreen(), name: "DialogScreen"),
             button(page: TodoScreen(), name: "TodoScreen"),
-
+            button(page: NewsScreen(), name: "NewsScreen"),
+            button(page: JsonScreen(), name: "JsonScreen"),
             ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, "/first");

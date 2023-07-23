@@ -19,6 +19,7 @@ import 'ch5/04.ui_exam_screen.dart';
 import 'ch6/01.route_screen.dart';
 import 'ch6/07.dialog_screen.dart';
 import 'ch6/todo/08.todo_screen.dart';
+import 'ch7/03.future_screen.dart';
 import 'ch7/news/01.news_screen.dart';
 import 'ch7/news/02.json_screen.dart';
 
@@ -68,6 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
             button(page: TodoScreen(), name: "TodoScreen"),
             button(page: NewsScreen(), name: "NewsScreen"),
             button(page: JsonScreen(), name: "JsonScreen"),
+            button(page: FutureScreen(), name: "FutureScreen"),
             ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, "/first");

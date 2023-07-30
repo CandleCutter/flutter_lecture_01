@@ -24,6 +24,7 @@ import 'ch7/news/01.news_screen.dart';
 import 'ch7/news/02.json_screen.dart';
 import 'ch8/01.open_api_screen.dart';
 import 'ch8/03.get_x_screen.dart';
+import 'ch8/06.notifier_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -58,7 +59,6 @@ class _HomeScreenState extends State<HomeScreen> {
             button(page: GridViewScreen(), name: "GridViewScreen"),
             button(page: PageViewScreen(), name: "PageViewScreen"),
             button(page: TabBarScreen(), name: "TabBarScreen"),
-
             button(
                 page: DefaultTabControllerScreen(),
                 name: "DefaultTabControllerScreen"),
@@ -74,6 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
             button(page: FutureScreen(), name: "FutureScreen"),
             button(page: OpenApiScreen(), name: "OpenApiScreen"),
             button(page: GetXScreen(), name: "GetXScreen"),
+            button(page: NotifierScreen(), name: "NotifierScreen"),
             ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, "/first");

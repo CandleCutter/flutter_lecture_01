@@ -22,6 +22,8 @@ import 'ch6/todo/08.todo_screen.dart';
 import 'ch7/03.future_screen.dart';
 import 'ch7/news/01.news_screen.dart';
 import 'ch7/news/02.json_screen.dart';
+import 'ch8/01.open_api_screen.dart';
+import 'ch8/03.get_x_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -70,6 +72,8 @@ class _HomeScreenState extends State<HomeScreen> {
             button(page: NewsScreen(), name: "NewsScreen"),
             button(page: JsonScreen(), name: "JsonScreen"),
             button(page: FutureScreen(), name: "FutureScreen"),
+            button(page: OpenApiScreen(), name: "OpenApiScreen"),
+            button(page: GetXScreen(), name: "GetXScreen"),
             ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, "/first");

@@ -5,6 +5,9 @@ import 'package:flutter_lecture_01/ch6/01.route_screen.dart';
 import 'package:flutter_lecture_01/ch6/02.route_second_screen.dart';
 import 'package:flutter_lecture_01/ch6/named_route/05.route_named_second_screen.dart';
 import 'package:flutter_lecture_01/ch6/named_route/06.route_named_third_screen.dart';
+import 'package:flutter_lecture_01/ch8/05.my_controller.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'ch3/01.container_screen.dart';
 import 'ch3/02.column_screen.dart';
 import 'ch6/named_route/04.route_named_screen.dart';
@@ -13,9 +16,10 @@ import 'home_screen.dart';
 /// main 함수
 /// 어플리케이션이 시작하는 위치
 
-void main(){
+void main() {
+  /// Mycontroller는 앱이 실행하는 동안 계속 유지(살아있음)
+  Get.put(MyController(), permanent: true);
   runApp(const MyApp());
-
 }
 
 class MyApp extends StatelessWidget {
@@ -25,16 +29,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 
-      // home : HomeScreen(),
-      initialRoute: "/",
-      routes: {
-        "/": (context) => const HomeScreen(),
-        "/first": (context) => const RouteNamedScreen(),
-        "/second": (context) => const RouteNamedSecondScreen(),
-        "/third": (context) => const RouteNamedThirdScreen(),
-      }
-    );
-
-
+        // home : HomeScreen(),
+        initialRoute: "/",
+        routes: {
+          "/": (context) => const HomeScreen(),
+          "/first": (context) => const RouteNamedScreen(),
+          "/second": (context) => const RouteNamedSecondScreen(),
+          "/third": (context) => const RouteNamedThirdScreen(),
+        });
   }
 }
